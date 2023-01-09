@@ -1,9 +1,9 @@
 # Role-playing game using Artificial Intelligence
 <b>Author: Almudena Ramírez</b>
 
-This project consists of a role-playing game that can interact with a d20 die.
+This project consists of a role-playing game that can interact with a d6 die.
 It was divided into two parts:
-1. A neural network is trained to identify the number of a d20 die with a camera. 
+1. A neural network is trained to identify the number of a d6 die with a camera. 
 2. The detected number would modify, depending on its value, a story presented through streamlit. 
 
 ## Workflow

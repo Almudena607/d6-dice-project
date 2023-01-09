@@ -13,3 +13,6 @@ It was divided into two parts:
 4. Training of the data
 5. Creation of the history and its different parts
 6. Creation of the dashboard
+
+## 1. Database
+The database used for this project is https://www.kaggle.com/datasets/nellbyler/d6-dice. It contains one folder with the labels' annotations and another folder with 250 images. Each dice image has between 1 and 25 dice.

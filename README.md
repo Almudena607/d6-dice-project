@@ -16,3 +16,6 @@ It was divided into two parts:
 
 ## 1. Database
 The database used for this project is https://www.kaggle.com/datasets/nellbyler/d6-dice. It contains one folder with the labels' annotations and another folder with 250 images. Each dice image has between 1 and 25 dice.
+
+## 3. Configuration of the model
+Google Colab document with the configuration conde: https://colab.research.google.com/drive/14IJC9xSUyNLY-10VW03txkU2YwEqXaNc?usp=sharing

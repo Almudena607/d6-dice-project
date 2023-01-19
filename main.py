@@ -18,8 +18,8 @@ def predict_dice(img_path):
 
 st.markdown("# Clasificación de Dados")
 st.image("header.jpg")
-st.text("¿Cuando te hablan de dados solo te vienen a la cabeza esos aburridos del parchís?\n¿Alguna vez te has preguntado para qué son los dados\ntan raros de las tiendas frikis?")
-st.text("Este proyecto consiste en la predicción del tipo de dado según el número\nde caras que tenga. Para ello ingresa a continuación una URL o sube\nun archivo (.jpg o .png) con la imagen de un dado.")
+st.write("¿Cuando te hablan de dados solo te vienen a la cabeza esos aburridos del parchís?\nEn verdad hay mucha diversidad en cuanto a dados se refiere, cada uno con una función muy específica, especialmente relacionada con el juego de rol y juegos de mesa. Con este proyecto te explicaremos para qué sirve ese dado tan raro que tiene tu primo en su colección.")
+st.write("Este proyecto consiste en la predicción del tipo de dado según el número\nde caras que tenga. Para ello ingresa a continuación una URL o sube\nun archivo (.jpg o .png) con la imagen de un dado.")
 
 st.markdown("## ¿Para qué quiero este dado?")
 img_url = st.text_input("Ingresa la URL de una imagen")

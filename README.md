@@ -1,21 +1,32 @@
-# Role-playing game using Artificial Intelligence
+# ¿Para qué sirve este dado?
 <b>Author: Almudena Ramírez</b>
 
-This project consists of a role-playing game that can interact with a d6 die.
-It was divided into two parts:
-1. A neural network is trained to identify the number of a d6 die with a camera. 
-2. The detected number would modify, depending on its value, a story presented through streamlit. 
+Este proyecto se basa en una red neuronal entrenada para distinguir distintos tipos de dados empleados en juegos de rol. Estos dados se clasifican según el número de caras que presentan (4, 6, 8, 10, 12 o 20). 
+ 
 
-## Workflow
-1. Preparation of the dataset
-2. Exploratory analysis of the data
-3. Configuration of the model
-4. Training of the data
-5. Creation of the history and its different parts
-6. Creation of the dashboard
+## Dataset
+El dataset empleado para este proyecto se puede descargar en https://www.kaggle.com/datasets/ucffool/dice-d4-d6-d8-d10-d12-d20-images.
+Características:
+* Las imágenes ya vienen separadas en train y test
+* Las imágenes vienen en distintos fondos, colores, orientaciones y ángulos
+* Las imágenes están clasificadas en subcarpetas en función de su número de caras
+* La mayoría son 480x480
 
-## 1. Database
-The database used for this project is https://www.kaggle.com/datasets/nellbyler/d6-dice. It contains one folder with the labels' annotations and another folder with 250 images. Each dice image has between 1 and 25 dice.
 
-## 3. Configuration of the model
-Google Colab document with the configuration conde: https://colab.research.google.com/drive/14IJC9xSUyNLY-10VW03txkU2YwEqXaNc?usp=sharing
+## Elementos del proyecto
+Este repositorio se compone principalmente de:
+* Una carpeta con el dataset (dice-d4-d6-d8-d10-d12-d20) dividido en distintas subcarpetas
+* Archivo 'entrenamiento.py' con el entrenamiento de la red neuronal utilizando Mobilenet
+* Modelo entrenado (modelo.h5)
+* Archivo 'predicción.py' donde se ejecuta la predicción de los archivos que le vamos a dar
+* Archivo 'main.py' en el que está la organización del dashboard en streamlit
+
+## Cómo se ejecuta el proyecto
+En el documento "requirements.txt" están los programas y sus versiones utilizados para crear el proyecto.
+
+### Ejecutar streamlit
+En el terminal, ejecutar el fichero `streamlit_main.py`
+
+```bash
+streamlit run 'streamlit_main.py'
+```
